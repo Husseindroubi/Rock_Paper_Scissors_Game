@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock  Paper  Scissors</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+    <h1 class="header-text">Rock Paper Scissors</h1>
+</header>
+
+<main>
+    <div class="game-container">
+        <div class="number-of-rounds">
+            <label for="rounds">Number of Rounds:</label>
+            <input type="number" id="rounds" min="1" value="1">
+        </div>
+
+
+        <div id="gameResult"></div>
+
+        <div class="start">
+            <h2>Choose one: <br>
+                Rock✊ Paper🖐 Scissors✌</h2>
+        </div>
+        <div class="game-choices" id="game-choices">
+            <button class="icons" id="rock" onclick="chooseOption('Rock')">
+                <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48"><path fill="#3B4262" d="M45.06 12.22c-.642-8.096-9.734-7.269-9.734-7.269-3.837-6.765-9.832-1.865-9.832-1.865-4.606-6.63-10.38-.486-10.38-.486-9.957-1.074-9.571 7.066-9.571 7.066-.234 2.588 1.403 10.593 1.403 10.593-1.477-4.614-4.68-.784-4.68-.784-3.94 6.078-.975 9.405-.975 9.405 5.33 6.246 16.688 13.743 16.688 13.743 4.113 2.356 2.373 4.457 2.373 4.457l24.876-4.11.571-4.718c3.782-11.436-.739-26.032-.739-26.032z"/></svg>
+            </button>
+            <button class="icons" id="paper" onclick="chooseOption('Paper')">
+                <img src="icon-paper.svg" alt="paper choice">
+            </button>
+            <button class="icons" id="scissors" onclick="chooseOption('Scissors')">
+                <img src="icon-scissors.svg" alt="scissors choice">
+            </button>
+        </div>
+
+        <div class="button-body">
+            <div>
+                <button class="start-button">Start Game</button>
+            </div>
+            <div>
+                <button class="play-again-button">Play Again</button>
+            </div>
+        </div>
+    </div>
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>
